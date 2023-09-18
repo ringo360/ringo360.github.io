@@ -1,8 +1,11 @@
-@charset "UTF-8";@import "https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext";@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext";
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext";
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext";
 @import url('https://fonts.cdnfonts.com/css/montserrat');
 
-html,body {
-	font-family: roboto,sans-serif;
+html,
+body {
+    font-family: roboto, sans-serif;
     box-sizing: border-box;
     margin: 0;
     width: 100%;
@@ -16,68 +19,77 @@ body {
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("assets/background.png");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: roboto,sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: roboto, sans-serif;
     font-weight: 300;
     line-height: 100%
 }
 
 
-.profile{
-	padding:20px;
-	width: 50%;
-	height: 33%;
-	margin: 60 auto;
-	position: left;
-	background-color:#141417;
-	border-radius:10px;
-	text-align: left;
+.profile {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    margin: 60 auto;
+    padding: 20px 20px;
+    padding-bottom: 120px;
+    position: left;
+    background-color: #141417;
+    border-radius: 10px;
+    text-align: left;
 }
 
-.profile > img{
-	display: flex;
-	width: 150px;
-	height: 150px;
-	border-radius: 100%;
-	position: left;
-	margin-top: -60px;
+.profile-images {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: -60px;
 }
 
-.myname > h1{
-	display: flex;
-	font-family: montserrat;
-	font-weight: bold;
-	line-height: 30px;
-	font-size: 30px;
-	color: white;
+.profile-images>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: left;
 }
 
-.profile > h2{
-	font-family: Consolas,"courier new";
-	line-height: 20px;
-	font-size: 13px;
-	color: gray;
+.profile-images>h1 {
+    position: relative;
+    top: 14px;
+    font-family: montserrat;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 30px;
+    color: white;
 }
 
-.discordinfo{
-	text-align: right;
-	position: absolute;
-	margin-top: 0px;
-	top: 27%;
-	left: 64%;
-	transform: translate(-50%,-50%);
+.profile>h2 {
+    font-family: Consolas, "courier new";
+    line-height: 20px;
+    font-size: 13px;
+    color: gray;
 }
 
+.discordinfo {
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
 
-.discordguild{
-	text-align: right;
-	position: absolute;
-	top: 40%;
-	left: 66%;
-	transform: translate(-50%,-50%);
+.discordinfo>img {
+    margin: 20px 0 0 auto;
+    display: block;
 }
