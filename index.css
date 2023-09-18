@@ -27,30 +27,33 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 100%
 }
 
+
 .profile{
 	padding:20px;
 	width: 50%;
 	height: 33%;
-	margin: 0 auto;
-	position: center;
+	margin: 60 auto;
+	position: left;
 	background-color:#141417;
 	border-radius:10px;
-	text-align: center;
+	text-align: left;
 }
 
 .profile > img{
+	display: flex;
 	width: 150px;
 	height: 150px;
 	border-radius: 100%;
-	position: center;
+	position: left;
 	margin-top: -60px;
 }
 
-.profile > h1{
+.myname > h1{
+	display: flex;
 	font-family: montserrat;
 	font-weight: bold;
 	line-height: 30px;
-	font-size: 20px;
+	font-size: 30px;
 	color: white;
 }
 
@@ -62,6 +65,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .discordinfo{
-	text-align: center;
-	margin-top: -100px;
+	text-align: right;
+	position: absolute;
+	margin-top: 0px;
+	top: 27%;
+	left: 64%;
+	transform: translate(-50%,-50%);
+}
+
+
+.discordguild{
+	text-align: right;
+	position: absolute;
+	top: 40%;
+	left: 66%;
+	transform: translate(-50%,-50%);
 }
