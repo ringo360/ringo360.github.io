@@ -1,5 +1,5 @@
 @charset "UTF-8";@import "https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext";@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext";
-
+@import url('https://fonts.cdnfonts.com/css/montserrat');
 
 
 html,body {
@@ -26,4 +26,18 @@ h1,h2,h3,h4,h5,h6 {
     font-family: roboto,sans-serif;
     font-weight: 300;
     line-height: 100%
+}
+
+.profile{
+	padding:25px;
+	background-color:#141417;
+	border-radius:10px;
+}
+
+.profile-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background-image: url("assets/prof.webp");
+	background-position: center;
 }
