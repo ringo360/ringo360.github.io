@@ -8,4 +8,8 @@ html,body{
 
   body{
 	padding: 10px;
+	background: url("https://media.discordapp.net/attachments/1126420357625159681/1153224673354579978/dhuaun.png");
+	background-color: chartreuse;
+	background-size: 286px;
+	background-position: center;
   }
