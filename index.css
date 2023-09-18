@@ -1,7 +1,6 @@
 @charset "UTF-8";@import "https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext";@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext";
 @import url('https://fonts.cdnfonts.com/css/montserrat');
 
-
 html,body {
 	font-family: roboto,sans-serif;
     box-sizing: border-box;
@@ -29,15 +28,40 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .profile{
-	padding:25px;
+	padding:20px;
+	width: 50%;
+	height: 33%;
+	margin: 0 auto;
+	position: center;
 	background-color:#141417;
 	border-radius:10px;
+	text-align: center;
 }
 
-.profile-img{
-	width: 100px;
-	height: 100px;
+.profile > img{
+	width: 150px;
+	height: 150px;
 	border-radius: 100%;
-	background-image: url("assets/prof.webp");
-	background-position: center;
+	position: center;
+	margin-top: -60px;
+}
+
+.profile > h1{
+	font-family: montserrat;
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 20px;
+	color: white;
+}
+
+.profile > h2{
+	font-family: Consolas,"courier new";
+	line-height: 20px;
+	font-size: 13px;
+	color: gray;
+}
+
+.discordinfo{
+	text-align: center;
+	margin-top: -100px;
 }
