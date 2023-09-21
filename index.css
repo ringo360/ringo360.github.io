@@ -5,22 +5,22 @@
 
 html,
 body {
-    font-family: roboto, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    cursor: hidden;
-    color: white;
+	font-family: roboto, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	cursor: hidden;
+	color: white;
 }
 
 body {
-    padding: 10px;
-    background-size: cover;
-    background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("assets/background.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+	padding: 10px;
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("assets/background.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 
@@ -30,67 +30,126 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: roboto, sans-serif;
-    font-weight: 300;
-    line-height: 100%
+	font-family: roboto, sans-serif;
+	font-weight: 300;
+	line-height: 100%
 }
 
 
 .profile {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 50%;
-    margin: 60 auto;
-    padding: 20px 20px;
-    padding-bottom: 120px;
-    position: left;
-    background-color: #141417;
-    border-radius: 10px;
-    text-align: left;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 50%;
+	margin: 60 auto;
+	padding: 20px 20px;
+	padding-bottom: 120px;
+	position: left;
+	background-color: #141417;
+	border-radius: 10px;
+	text-align: left;
 }
 
 .profile-images {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-top: -60px;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	margin-top: -60px;
 }
 
 .profile-images>img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    position: left;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	position: left;
 }
 
 .profile-images>h1 {
-    position: relative;
-    top: 14px;
-    font-family: montserrat;
-    font-weight: bold;
-    line-height: 30px;
-    font-size: 30px;
-    color: white;
+	position: relative;
+	top: 14px;
+	font-family: montserrat;
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 30px;
+	color: white;
 }
 
 .profile>h2 {
-    font-family: Consolas, "courier new";
-    line-height: 20px;
-    font-size: 13px;
-    color: gray;
+	font-family: Consolas, "courier new";
+	line-height: 20px;
+	font-size: 13px;
+	color: gray;
 }
 
 .discordinfo {
-    display: inline;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-align: right;
+	display: inline;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	text-align: right;
 }
 
 .discordinfo>img {
-    margin: 20px 0 0 auto;
-    display: block;
+	margin: 20px 0 0 auto;
+	display: block;
 }
 
+.Socials {
+	margin: 0 auto;
+	width: 70%;
+}
+
+
+
+.Socials-grid {
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.Socials-grid>div {
+	backdrop-filter: blur(5px);
+	border-radius: 24px;
+	width: 200px;
+	height: 200px;
+	background-color: rgba(221, 238, 255, 0.7);
+}
+
+.Socials-grid>div .icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bg);
+	color: #fff;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	border-radius: 10px;
+	width: 40px;
+	height: 40px;
+}
+
+.Socials-grid>div .icon>svg {
+	width: 80%;
+}
+
+.Socials-grid>div a {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	padding: 24px;
+	color: #000;
+	font-size: 18.264px;
+}
+
+.Socials .meta {
+	margin-top: 10px;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+}
