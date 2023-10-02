@@ -223,9 +223,19 @@
 
     </div>
     <script>
-        new osuCursor()
-
-    </script>
+		// ユーザーエージェントを取得
+		const userAgent = navigator.userAgent;
+	  
+		// PC版のユーザーエージェントを検出する正規表現
+		const pcUserAgentPattern = /Windows|Macintosh|Linux/;
+	  
+		// ユーザーエージェントがPC版であるかどうかをチェック
+		if (pcUserAgentPattern.test(userAgent)) {
+		  // PC版の場合、スクリプトを実行
+		  new osuCursor();
+		}
+	  </script>
+	  
 </body>
 
 </html>
