@@ -99,7 +99,12 @@ h6 {
 	width: 70%;
 }
 
-
+.Socials-icons {
+	cursor: pointer !important;
+	display: flex;
+	gap: 40px;
+	justify-content: space-between;
+}
 
 .Socials-grid {
 	display: grid;
@@ -108,11 +113,18 @@ h6 {
 }
 
 .Socials-grid>div {
+	/* cursor: pointer; */
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 	backdrop-filter: blur(5px);
 	border-radius: 24px;
 	width: 200px;
 	height: 200px;
 	background-color: rgba(221, 238, 255, 0.7);
+	z-index: 5;
 }
 
 .Socials-grid>div .icon {
@@ -126,20 +138,39 @@ h6 {
 	border-radius: 10px;
 	width: 40px;
 	height: 40px;
+	/* cursor: pointer; */
 }
 
 .Socials-grid>div .icon>svg {
 	width: 80%;
+	/* cursor: pointer; */
 }
 
 .Socials-grid>div a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 	box-sizing: border-box;
 	padding: 24px;
 	color: #000;
+	text-align: left;
 	font-size: 18.264px;
+	/* cursor: pointer; */
+	/* z-index: 2; */
+	/* transition: o 0.3s ease; */
 }
+
+/*
+.Socials-grid>div:hover a {
+	background-color: rgba(221, 238, 255, 0.9);
+  }
+*/
 
 .Socials .meta {
 	margin-top: 10px;
