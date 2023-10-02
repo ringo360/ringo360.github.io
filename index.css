@@ -237,6 +237,12 @@ body {
 	.Socials {
 	  width: 70%; /* ソーシャルメディアセクションをスマートフォン幅に調整 */
 	  margin: auto 5;
+	  display: flex; /* 親要素をフレックスコンテナにする */
+	  justify-content: center; /* 子要素を中央寄せにする */
+	}
+
+	.Socials>h1 {
+		visibility: hidden;
 	}
   
 	.Socials-grid {
