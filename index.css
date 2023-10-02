@@ -125,6 +125,7 @@ h6 {
 	height: 200px;
 	background-color: rgba(221, 238, 255, 0.7);
 	z-index: 5;
+	transition: transform 0.3s ease;
 }
 
 .Socials-grid>div .icon {
@@ -166,11 +167,12 @@ h6 {
 	/* transition: o 0.3s ease; */
 }
 
-/*
-.Socials-grid>div:hover a {
-	background-color: rgba(221, 238, 255, 0.9);
+
+.Socials-grid>div:hover {
+	/* background-color: rgba(221, 238, 255, 0.9); */
+	transform: scale(0.9);
   }
-*/
+
 
 .Socials .meta {
 	margin-top: 10px;
